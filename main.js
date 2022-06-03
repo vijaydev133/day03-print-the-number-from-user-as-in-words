@@ -2,6 +2,8 @@ let input = document.getElementById("inp");
 
 let btn1 = document.getElementById("btn-1");
 
+let btn2 = document.getElementById("btn-2");
+
 let output = document.getElementById("out");
 
 btn1.addEventListener("click", function () {
@@ -66,6 +68,11 @@ btn1.addEventListener("click", function () {
     }
     num = Math.floor(num / 10);
   }
+});
+
+btn2.addEventListener("click", function () {
+    output.innerHTML = " "
+    input.value = " "
 });
 
 // let num = 245;
