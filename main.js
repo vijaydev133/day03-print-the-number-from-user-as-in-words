@@ -8,8 +8,9 @@ let output = document.getElementById("out");
 
 btn1.addEventListener("click", function () {
   let num = input.value;
-  console.log(num);
+  // console.log(num);
   let lastDigit;
+
 
   while (num > 0) {
     let para = document.createElement("p");
@@ -61,8 +62,12 @@ btn1.addEventListener("click", function () {
         output.appendChild(para);
         break;
 
+      case 0:
+          para.innerText = "Zero";
+          output.appendChild(para);
+          break;
       default:
-        para.innerText = "Zero";
+        para.innerText = "please enter valid number";
         output.appendChild(para);
         break;
     }
